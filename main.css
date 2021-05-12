@@ -1,0 +1,284 @@
+* {
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.fa-adobe {
+  color: #d33;
+  font-size: 2.0rem;
+}
+
+header {
+  height: 55px;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 5px 2px #777;
+}
+
+.header-wrapper {
+  color: #333;
+  font-size: 2.1rem;
+  position: relative;
+}
+
+.header-wrapper .user {
+  margin: 30px 10px 0 0;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+}
+
+.header-wrapper .fa-power-off {
+  margin-left: 7px;
+  background-color: #333;
+  color: #6f6;
+  padding: 4.1px 3.5px 4.1px 4px;
+  border-radius: 16px;
+}
+
+.header-wrapper img {
+  height: 50px;
+  left: 40px;
+  position: absolute;
+}
+
+.header-wrapper .header-menu {
+  background-color: #204956;
+  height: 55px;
+  width: 40px;
+  position: absolute;
+  transition: all 0.2s;
+}
+
+.header-wrapper .header-menu:hover {
+  background-color: #203946;
+}
+
+.header-wrapper .header-menu .menu-btn {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 17px 30px 0 10px;
+  color: #FFF;
+  width: 20px;
+  font-size: 21px;
+  position: fixed;
+}
+
+.header-wrapper .header-menu .fa-bars {
+  z-index: 100;
+}
+
+.header-wrapper .header-menu .fa-times {
+  padding-left: 12px;
+  z-index: 101;
+  display: none;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.menu-modal {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 27%;
+  height: 650px;
+  position: fixed;
+  font-size: 1.5rem;
+  border: 2px solid #333;
+  z-index: 50;
+  top: -600px;
+}
+
+.menu-modal ul {
+  margin: 5px;
+  border-top: 1px dashed #333;
+}
+
+.menu-modal ul .menu-allow {
+  position: absolute;
+  display: none;
+  line-height: 2.9rem;
+  left: 10px;
+}
+
+.menu-modal ul li {
+  padding: 10px;
+  border-bottom: 1px dashed #333;
+  list-style: none;
+}
+
+.menu-modal ul li:hover {
+  color: #33a;
+}
+
+.main {
+  padding: 80px 0 30px;
+  background-color: #f1f3f6;
+}
+
+.main .side-list-left {
+  float: left;
+  width: 12%;
+  margin: 20px 0 0 10px;
+}
+
+.main .side-list-left img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.main .side-list-right {
+  float: right;
+  margin: 20px 0 0 0;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 50px;
+}
+
+.main .side-list-right .company {
+  background-color: #204956;
+  color: #fff;
+  width: 12%;
+  height: 32px;
+  margin: 0 0 10px auto;
+  padding: 10px 10% 10px 10px;
+  font-size: 1.4rem;
+}
+
+.main .side-list-right .company p {
+  display: inline-block;
+  width: 100px;
+}
+
+.main .container {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  width: 70%;
+  margin: auto;
+}
+
+.main .card-wrapper {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.main .card-wrapper .article-head {
+  margin: auto;
+  border-bottom: 1px solid #333;
+  font-size: 1.7rem;
+  width: 95%;
+}
+
+.main .card-wrapper .article-head h5 {
+  width: 70px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #204956;
+}
+
+.main .card-wrapper .article-head .up-to-date {
+  float: right;
+  font-size: 1.4rem;
+}
+
+.main .article-card {
+  width: 100%;
+  margin: 10px 3% 3px;
+}
+
+.main article {
+  background-color: #eee;
+  padding: 10px 0 10px 0;
+  margin: 10px 0 0 0;
+  box-shadow: 0px 1px 7px 3px #ccc;
+}
+
+.main article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.main article .article-wrapper {
+  margin: 0 auto;
+}
+
+.main article .card-info {
+  margin: 0px 10px 5px 3px;
+  border-left: 5px solid #204956;
+  padding: 5px 5px 5px 10px;
+}
+
+.main article .card-info .hukuri {
+  background-color: #a3d;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 7px;
+  font-weight: bold;
+}
+
+.main article .card-info .new {
+  background-color: #d33;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 7px;
+  font-weight: bold;
+}
+
+.main article .card-info .syanaiho {
+  background-color: #f93;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 7px;
+  font-weight: bold;
+}
+
+.main article .card-info .time {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.main article section {
+  margin-left: 3px;
+  border-left: 5px solid #204956;
+}
+
+.main article section .text-contents {
+  padding: 5px 20px 5px 20px;
+}
+
+.main article section .text-contents a {
+  margin: 0 0 0 5px;
+}
+
+.main article section .text-contents img {
+  width: 50%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #FFF;
+  font-size: 1.1rem;
+  text-align: center;
+  box-shadow: 0 -3px 7px 0px #ccc;
+}
